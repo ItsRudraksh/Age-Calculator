@@ -1,0 +1,84 @@
+/* Reset default styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set body styles */
+body {
+  width: 100vw; /* Set width to 100% of the viewport width */
+  height: 100vh; /* Set height to 100% of the viewport height */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-image: linear-gradient(
+    120deg,
+    #a1c4fd 0%,
+    #c2e9fb 100%
+  ); /* Set gradient background */
+}
+
+/* Center the main content */
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card styles */
+.card {
+  width: 32rem; /* Set card width */
+  position: fixed; /* Position the card fixed on the screen */
+  top: 50%; /* Position the card vertically centered */
+  left: 50%; /* Position the card horizontally centered */
+  transform: translate(-50%, -50%); /* Adjust positioning using translation */
+  border-radius: 15px; /* Set border radius for rounded corners */
+  background: #ffffff; /* Set background color */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translate(-50%, -52%); /* Move the card up slightly on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+/* Card header styles */
+.card-header {
+  border-top-left-radius: 15px; /* Set border radius for top-left corner */
+  border-top-right-radius: 15px; /* Set border radius for top-right corner */
+  background-image: linear-gradient(
+    to right,
+    #6991c7 0%,
+    #a3bded 100%
+  ); /* Set gradient background for header */
+  color: #ffffff; /* Set text color for header */
+}
+
+/* Primary button styles */
+.btn-primary {
+  background-image: linear-gradient(
+    to right,
+    #6991c7 0%,
+    #a3bded 100%
+  ); /* Set gradient background for button */
+  border: none; /* Remove button border */
+  transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+/* Primary button hover effect */
+.btn-primary:hover {
+  transform: scale(1.05); /* Increase button size slightly on hover */
+}
+
+/* Primary button focus effect */
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(72, 202, 228, 0.5); /* Add box shadow on focus */
+}
+
+/* Lead text styles */
+.lead {
+  color: #3e3e3e; /* Set text color for lead text */
+}
